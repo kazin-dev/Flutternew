@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'usuario.dart';
+import 'estilos/estilos.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,11 +28,12 @@ class MyApp extends StatelessWidget {
       body: Center(
         child: Padding(padding: const EdgeInsets.all(18.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Nome: ${u.nome}"),
-              Text("Código: ${u.codigo}"),
-              Text("Login: ${u.login}"),
-              Text("Senha: ${u.senha}")
+              Text("Nome: ${u.nome}", style: EstilosApp.texto),
+              Text("Código: ${u.codigo}", style: EstilosApp.texto),
+              Text("Login: ${u.login}", style: EstilosApp.texto),
+              Text("Senha: ${u.senha}", style: EstilosApp.texto)
 
             ]
         )
