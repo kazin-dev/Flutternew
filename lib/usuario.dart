@@ -12,7 +12,9 @@ class Usuario{
   }
 
   //getters
-
+  int? get codigo => _codigo;
+  String? get nome => _nome;
+  String? get senha => _senha;
   //exemplo tradicional
 
   String? get login{
@@ -21,18 +23,17 @@ class Usuario{
 
   //metodo estilo dart
 
-  int? get codigo => _codigo;
-  String? get nome => _nome;
-  String? get senha => _senha;
+
 
   //setters
-  set login(String? login){
-    _login = login;
-  }
-
-  //metodo set ao estilo dart
   set nome(String? nome) => _nome = nome;
   set codigo(int? codigo) => _codigo = codigo;
   set senha(String? senha) => _senha = senha;
+
+
+  //metodo set ao estilo dart
+  set login(String? login){
+    _login = login;
+  }
 
 }
