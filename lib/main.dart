@@ -3,8 +3,11 @@ import 'package:fluttersenai/telas/tela_login.dart';
 import 'estilos/estilos.dart';
 import 'usuario.dart';
 import 'telas/tela_home.dart';
+import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 void main() {
+  sqfliteFfiInit();
+  databaseFactory = databaseFactoryFfi;
   runApp(const MyApp());
 }
 
